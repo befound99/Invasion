@@ -5,7 +5,9 @@
   --color30: #5c7aff;
   --color10: #07004D;
 }
-
+* {
+  box-sizing: border-box;
+}
 .bc-dark {
   background-color: var(--dark);
 }
@@ -25,6 +27,9 @@ nav {
 nav , header, section, .content-container {
   min-width: 320px;
 }
+.content-items1 {
+  max-width: 325px;
+}
 /*                                              Header */
 /*                                              Header */
 /*                                              Header */
@@ -38,12 +43,15 @@ header {
   background-size: cover;
 }
 a.brand{
-  padding: 0.5rem;
   border-radius: 10px;
+}
+.header-top-body{
+  background-image: linear-gradient(var(--color30), rgba(255, 255, 255, 0));
 }
 .header-top {
   justify-content: space-between;
-  background-image: linear-gradient(var(--color30), rgba(255, 255, 255, 0));
+  max-width: 1024px;
+  padding-right: 30px;
 
 }
 .header-top a:hover {
@@ -104,11 +112,14 @@ a.brand img {
 /*                                                  navbar */
 /*                                                  navbar */
 /*                                                  navbar */
-nav {
+.navbar-body {
   background-image: linear-gradient(rgba(255, 255, 255, 0), var(--color60));
+}
+nav {
   height: auto;
   position: sticky;
   top: 0;
+  max-width: 1024px;
 }
 .nav-item a:hover {
   position: relative;
@@ -173,7 +184,7 @@ ul.nav-list {
 /*                                                  content */
 /*                                                  content */
 .content-container {
-  height: 100vh;
+  height: 200vh;
   background-color: var(--color60);
 
 }
@@ -183,13 +194,28 @@ ul.nav-list {
   width: 100%;
   max-width: 1024px;
 }
+@media (max-width: 320px) {
+  .content-body {
+    padding: 0;
+  }
+}
 /*                                          new and upcoming */
 /*                                          new and upcoming */
 /*                                          new and upcoming */
 .new-and-upcoming {
   width: 320px;
-  color: brown;
-  height: 600px;
+  background-color: brown;
+  height: 50vh;
+}
+.popular {
+  width: 320px;
+  background-color: brown;
+  height: 50vh;
+}
+.polls {
+  width: 320px;
+  background-color: brown;
+  height: 50vh;
 }
 /*                                      new and upcoming end */
 /*                                      new and upcoming end */
