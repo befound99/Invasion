@@ -1,0 +1,196 @@
+:root {
+  --dark: #333;
+  --light: #f5f5f5; 
+  --color60: #d6d3f0;
+  --color30: #5c7aff;
+  --color10: #07004D;
+}
+
+.bc-dark {
+  background-color: var(--dark);
+}
+.bc-light {
+  background-color: var(--light);
+}
+.t-dark {
+  color: var(--dark);
+}
+.t-light {
+  color: var(--light);
+}
+nav {
+  height: 50px;
+  width: 100%;
+}
+nav , header, section, .content-container {
+  min-width: 320px;
+}
+/*                                              Header */
+/*                                              Header */
+/*                                              Header */
+/*                                              Header */
+/*                                              Header */
+/*                                              Header */
+
+header {
+  height: 50vh;
+  background-image: url(img/Halo\ Blue.jpg);
+  background-size: cover;
+}
+a.brand{
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.header-top {
+  justify-content: space-between;
+  background-image: linear-gradient(var(--color30), rgba(255, 255, 255, 0));
+
+}
+.header-top a:hover {
+  position: relative;
+  top: 1px;
+}
+a.brand img {
+  width: 10rem;
+
+}
+.sign a {
+  text-decoration: none;
+}
+.signin {
+  padding: 0 1rem;
+  text-shadow:5px 5px 5px rgb(75, 75, 99) ;
+}
+.signin:hover {
+  text-shadow: 3px 3px 3px rgb(75, 75, 99) ;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.signup {
+  background-color: var(--color10);
+  padding: 3px 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(16, 16, 41) ;
+
+}
+.signup:hover {
+  box-shadow: 3px 3px 3px rgb(16, 16, 41) ;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+@media (max-width: 991px) {
+  .sign,.signup, .signin{
+    display: none;
+  }
+  .header-top a.brand{
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+
+}
+/*                                              Header end */
+/*                                              Header end */
+/*                                              Header end */
+/*                                              Header end */
+/*                                              Header end */
+
+
+/*                                                  navbar */
+/*                                                  navbar */
+/*                                                  navbar */
+/*                                                  navbar */
+/*                                                  navbar */
+nav {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), var(--color60));
+  height: auto;
+  position: sticky;
+  top: 0;
+}
+.nav-item a:hover {
+  position: relative;
+  top: 1px;
+}
+nav a.brand img{
+  width: 7rem;
+  position: relative;
+  top: 3px;
+}
+ul.nav-list {
+  list-style-type: none;
+}
+.nav-sign a {
+  text-decoration: none;
+}
+.nav-signin {
+  padding-right:1rem;
+}
+.nav-signin:hover {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.nav-signup {
+  background-color: var(--color10);
+  padding: 3px 20px;
+  border-radius: 15px;
+
+}
+.nav-signup:hover {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.search-button {
+  border: 0;
+  background-color: var(--color10);
+  border-radius: 10px;
+}
+.search-button:hover {
+  position: relative;
+  top: 1px;
+}
+@media (min-width: 992px) {
+  nav a.brand {
+    display: none;
+  }
+  .nav-sign , .nav-signin, .nav-signup {
+    display: none;
+  }
+}
+/*                                               navbar end */
+/*                                               navbar end */
+/*                                               navbar end */
+/*                                               navbar end */
+/*                                               navbar end */
+
+/*                                                  content */
+/*                                                  content */
+/*                                                  content */
+/*                                                  content */
+/*                                                  content */
+.content-container {
+  height: 100vh;
+  background-color: var(--color60);
+
+}
+.content-body {
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+  max-width: 1024px;
+}
+/*                                          new and upcoming */
+/*                                          new and upcoming */
+/*                                          new and upcoming */
+.new-and-upcoming {
+  width: 320px;
+  color: brown;
+  height: 600px;
+}
+/*                                      new and upcoming end */
+/*                                      new and upcoming end */
+/*                                      new and upcoming end */
