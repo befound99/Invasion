@@ -8,7 +8,6 @@
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  border: 1px black solid
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 .bc-dark {
@@ -27,12 +26,10 @@ nav {
   height: 50px;
   width: 100%;
 }
-nav , header, section, .content-container, .content-body {
+nav , header.d-flex, section, .content-container, .content-container-body {
   min-width: 320px;
 }
-.content-items1 {
-  max-width: 325px;
-}
+
 /*                                              Header */
 /*                                              Header */
 /*                                              Header */
@@ -50,7 +47,7 @@ a.brand{
 }
 .header-top {
   justify-content: space-between;
-  max-width: 1024px;
+  max-width: 991px;
   padding-right: 30px;
 
 }
@@ -119,7 +116,7 @@ nav {
   height: auto;
   position: sticky;
   top: 0;
-  max-width: 1024px;
+  max-width: 991px;
 }
 .nav-item a:hover {
   position: relative;
@@ -172,7 +169,7 @@ ul.nav-list {
   position: relative;
   top: 1px;
 }
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   nav a.brand {
     display: none;
   }
@@ -186,14 +183,137 @@ ul.nav-list {
 /*                                               navbar end */
 /*                                               navbar end */
 
+.subheader {
+  width: 100%;
+  text-align: center;
+  background-color: var(--color10);
+  color: var(--light);
+  margin-bottom: 1rem;
+}
 
+a.content1{
+  height: 200px;
+  width: clamp(280px,90%,90%);
+  display: block;
+  background-color: red;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--light);
+  background-size: cover;
+}
+a.content1:hover{
+  text-decoration: underline;
+  color: var(--light);
+}
+/*                                                    content*/
+/*                                                    content*/
+/*                                                    content*/
+/*                                                    content*/
+/*                                                    content*/
+.content-container-body {
 
-/*                                                    content*/
-/*                                                    content*/
-/*                                                    content*/
-/*                                                    content*/
-/*                                                    content*/
+  width: 100%;
+  background-color: var(--color60);
 
+}
+.content-container{
+
+  width: clamp(320px,992px,992px);
+  padding: 6rem 0;
+
+}
+.content-container-first {
+
+  width: 60%;
+  padding: 3rem 0;
+
+}
+.new-titles{
+
+  width: clamp(320px, 80%, 992px);
+  background-color: var(--color30);
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+.new-titles-content1 {
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.6), rgb(0,0,0,0.9)),url(img/zelda-tears-of-the-kingdom-button-2k-1663127818777.jpg);
+}
+.new-titles-content2 {
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.6), rgb(0,0,0,0.9)),url(img/FFXVI.webp);
+}
+.new-titles-content3 {
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.6), rgb(0,0,0,0.9)),url(img/Diablo-4-6.jpg);
+}
+.new-titles-content4 {
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.6), rgb(0,0,0,0.9)),url(img/starfield.jpg);
+}
+.new-titles-content5 {
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.6), rgb(0,0,0,0.9)),url(img/hogwarts\ legacy.jpg);
+}
+.new-titles-content {
+  width: 100%;
+}
+.annual-ranking{
+
+  width: clamp(290px, 80%, 992px);
+  background-color: var(--color30);
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+.annual-ranking-content1 {
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.6), rgb(0,0,0,0.9)),url(img/elden-ring-limgrave-vista.jpg);
+}
+.annual-ranking-content2 {
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.6), rgb(0,0,0,0.9)),url(img/GOW\ ragnarok.webp);
+}
+.annual-ranking-content3 {
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.6), rgb(0,0,0,0.9)),url(img/vampire\ survivors.webp);
+}
+.annual-ranking-content4 {
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.6), rgb(0,0,0,0.9)),url(img/marvel\ snap.webp);
+}
+.annual-ranking-content5 {
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.6), rgb(0,0,0,0.9)),url(img/citizen\ sleeper.webp);
+}
+.annual-ranking-content {
+  width: 100%;
+}
+.content-container-second {
+
+  width: 40%;
+  height: 100vh;
+  padding: 3rem 0;
+  background-color: green;
+
+}
+@media (max-width: 991px){
+
+  .content-container{
+
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .content-container-first {
+
+    width: clamp(320px,80%,992px);
+
+  }
+  .content-container-second {
+
+    width: clamp(320px,80%,992px);
+    height: 100vh;
+
+  }
+}
 /*                                                  content end*/
 /*                                                  content end*/
 /*                                                  content end*/
