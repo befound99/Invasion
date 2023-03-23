@@ -85,6 +85,10 @@ a.brand img {
   top: 1px;
   left: 1px;
 }
+.shadowed {
+  box-shadow: 
+    3px 3px 3px #333333ad;
+}
 @media (max-width: 991px) {
   .sign,.signup, .signin{
     display: none;
@@ -110,11 +114,11 @@ a.brand img {
 /*                                                  navbar */
 /*                                                  navbar */
 .navbar-body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0), var(--color60));
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 20%, var(--color60));
+  height: 4rem;
+
 }
 nav {
-  height: auto;
-  position: sticky;
   top: 0;
   max-width: 991px;
 }
@@ -189,6 +193,7 @@ ul.nav-list {
   background-color: var(--color10);
   color: var(--light);
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 a.content1{
@@ -218,12 +223,14 @@ a.content1:hover{
 
   width: 100%;
   background-color: var(--color60);
+  padding: 5rem 0;
 
 }
 .content-container{
 
   width: clamp(320px,992px,992px);
-  padding: 6rem 0;
+  padding: 3rem 0;
+  background-image: linear-gradient(var(--color60),#3333332a,var(--color60));
 
 }
 /*                                    content-container-first */
@@ -265,7 +272,7 @@ a.content1:hover{
 }
 .annual-ranking{
 
-  width: clamp(290px, 80%, 992px);
+  width: clamp(320px, 80%, 992px);
   background-color: var(--color30);
   margin-bottom: 3rem;
   border-radius: 5px;
@@ -296,36 +303,92 @@ a.content1:hover{
 /*                           content-container-first-end */
 
 .content2 {
-  width: clamp(280px,100%,100%);
+  width: 100%;
   height: 200px;
   background-color: #21252933;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
 }
 
 .content3 {
-  width: clamp(280px,100%,100%);
+  width: 100%;
   height: 200px;
+  align-items: center;
+  justify-content: start;
+  padding-left: 1rem;
+}
+span.material-symbols-outlined {
+  font-size: 4rem;
 }
 /*                              content-container-second */
 /*                              content-container-second */
 /*                              content-container-second */
 /*                              content-container-second */
 .content-container-second {
-
   width: 40%;
   padding: 3rem 0;
-  background-color: green;
+}
+.content-container-second a:hover {
+  color: var(--light);
+  position: relative;
+  top: 1px;
+}
 
+.content4 {
+  width: 100%;
+  background-color: #21252933;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.content4:hover {
+  text-decoration: underline;
+}
+.content5 {
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+  padding: 1rem;
+}
+.content5:hover {
+  text-decoration: underline;
 }
 /*                                          Voting Links */
 /*                                          Voting Links */
 /*                                          Voting Links */
 .voting-links {
-  width: clamp(290px, 80%, 992px);
+  width: clamp(320px, 80%, 992px);
   background-color: var(--color30);
   border-radius: 5px;
   overflow: hidden;
+  margin-bottom: 3rem;
 }
+.voting-links a {
+  text-decoration: none;
+  color: var(--light);
+}
+/*                                          Voting Links end*/
+/*                                          Voting Links end*/
+/*                                          Voting Links end*/
 
+/*                                                 articles */
+/*                                                 articles */
+/*                                                 articles */
+.articles {
+  width: clamp(320px, 80%, 992px);
+  background-color: var(--color30);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.articles a {
+  text-decoration: none;
+  color: var(--light);
+}
+/*                                             articles end */
+/*                                             articles end */
+/*                                             articles end */
 @media (max-width: 991px){
 
   .content-container{
@@ -342,7 +405,6 @@ a.content1:hover{
   .content-container-second {
 
     width: clamp(320px,80%,992px);
-    height: 100vh;
 
   }
 }
@@ -352,3 +414,17 @@ a.content1:hover{
 /*                                                  content end*/
 /*                                                  content end*/
 
+/*                                                      footer */
+/*                                                      footer */
+/*                                                      footer */
+/*                                                      footer */
+.footer-body {
+  width: 100%;
+  height: 30vh;
+  background-color: crimson;
+}
+footer {
+  width: clamp(320px, 992px, 100%);
+  height: 100%;
+  background-color: black;
+}
