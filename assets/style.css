@@ -466,13 +466,24 @@ a.footer-brand {
   text-decoration: none;
   color: var(--light);
 }
+.footer-links a:hover {
+  color: var(--light);
+  text-decoration: underline;
+}
 .contacts-socials{
   width: 33.3333%;
   justify-content: center;
   padding: 1rem 0;
 }
+.follow-us span {
+  font-size: 25px;
+}
+.contact-us span {
+  font-size: 25px;
+}
 .footer-socials {
   margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 a.socials i{
   font-size: 30px;
@@ -511,7 +522,6 @@ a.socials8 i {
 }
 .footer-bottom {
   width: 100%;
-  height: 50px;
 }
 @media (max-width: 992px) {
   .footer-top {
