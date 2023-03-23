@@ -226,6 +226,10 @@ a.content1:hover{
   padding: 6rem 0;
 
 }
+/*                                    content-container-first */
+/*                                    content-container-first */
+/*                                    content-container-first */
+/*                                    content-container-first */
 .content-container-first {
 
   width: 60%;
@@ -286,14 +290,42 @@ a.content1:hover{
 .annual-ranking-content {
   width: 100%;
 }
+/*                           content-container-first-end */
+/*                           content-container-first-end */
+/*                           content-container-first-end */
+/*                           content-container-first-end */
+
+.content2 {
+  width: clamp(280px,100%,100%);
+  height: 200px;
+  background-color: #21252933;
+}
+
+.content3 {
+  width: clamp(280px,100%,100%);
+  height: 200px;
+}
+/*                              content-container-second */
+/*                              content-container-second */
+/*                              content-container-second */
+/*                              content-container-second */
 .content-container-second {
 
   width: 40%;
-  height: 100vh;
   padding: 3rem 0;
   background-color: green;
 
 }
+/*                                          Voting Links */
+/*                                          Voting Links */
+/*                                          Voting Links */
+.voting-links {
+  width: clamp(290px, 80%, 992px);
+  background-color: var(--color30);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
 @media (max-width: 991px){
 
   .content-container{
