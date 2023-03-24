@@ -94,7 +94,7 @@ a.brand img {
   box-shadow: 
     3px 3px 3px #333333ad;
 }
-.text-shadowed {
+.text-shadowed-dark {
   text-shadow: 0px 0px 8px black;
 }
 @media (max-width: 991px) {
@@ -124,6 +124,8 @@ a.brand img {
 .navbar-body {
   background-image: linear-gradient(rgba(255, 255, 255, 0) , var(--color60));
   height: 4rem;
+  position: sticky;
+  top: 0;
 
 }
 nav {
@@ -407,6 +409,7 @@ span.material-symbols-outlined {
 
   }
   .content-container-first {
+    align-items: center;
 
     width: clamp(320px,80%,992px);
 

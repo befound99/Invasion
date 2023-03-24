@@ -1,0 +1,391 @@
+:root {
+  --dark: #333;
+  --light: #f5f5f5; 
+  --color60: #d6d3f0;
+  --color30: #5c7aff;
+  --color10: #07004D;
+}
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap');
+
+.bc-dark {
+  background-color: var(--dark);
+}
+.bc-light {
+  background-color: var(--light);
+}
+.t-dark {
+  color: var(--dark);
+}
+.t-light {
+  color: var(--light);
+}
+.t-10 {
+  color: var(--color10);
+}
+.t-30 {
+  color: var(--color30);
+}
+nav {
+  height: 50px;
+  width: 100%;
+}
+nav , header.d-flex, section, .content-container, .content-container-body {
+  min-width: 320px;
+}
+.shadowed {
+  box-shadow: 
+    3px 3px 3px #333333ad;
+}
+.text-shadowed-dark {
+  text-shadow: 0px 0px 8px black;
+}
+
+/*                                              Header */
+/*                                              Header */
+/*                                              Header */
+/*                                              Header */
+/*                                              Header */
+/*                                              Header */
+
+header {
+  height: 50vh;
+  background-image: url(img/Halo\ Blue.jpg);
+  background-size: cover;
+}
+a.brand{
+  border-radius: 10px;
+}
+.header-top {
+  justify-content: space-between;
+  max-width: 991px;
+  padding-right: 30px;
+
+}
+.header-top a:hover {
+  position: relative;
+  top: 1px;
+}
+a.brand img {
+  width: 10rem;
+
+}
+.sign a {
+  text-decoration: none;
+}
+.signin {
+  padding: 0 1rem;
+  border: 0;
+}
+.signin:hover {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.signup {
+  background-color: var(--color10);
+  padding: 3px 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(16, 16, 41) ;
+
+}
+.signup:hover {
+  box-shadow: 3px 3px 3px rgb(16, 16, 41) ;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+@media (max-width: 991px) {
+  .sign,.signup, .signin{
+    display: none;
+  }
+  .header-top a.brand{
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+
+}
+/*                                              Header end */
+/*                                              Header end */
+/*                                              Header end */
+/*                                              Header end */
+/*                                              Header end */
+
+
+/*                                                  navbar */
+/*                                                  navbar */
+/*                                                  navbar */
+/*                                                  navbar */
+/*                                                  navbar */
+.navbar-body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0) , var(--color60));
+  height: 4rem;
+  position: sticky;
+  top: 0;
+
+}
+nav {
+  top: 0;
+  max-width: 991px;
+}
+.nav-item a:hover {
+  position: relative;
+  top: 1px;
+}
+nav a.brand img{
+  width: 7rem;
+  position: relative;
+  top: 3px;
+}
+ul.nav-list {
+  list-style-type: none;
+}
+.nav-sign a {
+  text-decoration: none;
+}
+.nav-signin {
+  padding-right:1rem;
+}
+.nav-signin:hover {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.nav-signup {
+  background-color: var(--color10);
+  padding: 3px 20px;
+  border-radius: 15px;
+
+}
+.nav-signup:hover {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #ffffff70;
+  border-color: #86b7fe;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.search-button {
+  border: 0;
+  background-color: var(--color10);
+  border-radius: 10px;
+}
+.search-button:hover {
+  position: relative;
+  top: 1px;
+}
+@media (min-width: 991px) {
+  nav a.brand {
+    display: none;
+  }
+  .nav-sign , .nav-signin, .nav-signup {
+    display: none;
+  }
+}
+/*                                               navbar end */
+/*                                               navbar end */
+/*                                               navbar end */
+/*                                               navbar end */
+/*                                               navbar end */
+
+/*                                                  content */
+/*                                                  content */
+/*                                                  content */
+/*                                                  content */
+/*                                                  content */
+.content-container-body {
+  padding: 3rem 0;
+  width: clamp(320px, 100%, 100%);
+  background-color: var(--color60);
+
+}
+.content-container {
+  width: clamp(320px,992px,992px);
+  justify-content: center;
+  align-items: start;
+}
+.content-container-first {
+  height: 90%;
+  width: clamp(320px,60%,60%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+.content-container-first-top {
+  padding: 1rem;
+  height: 400px;
+  background-image: url(img/elden-ring-limgrave-vista.jpg);
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+a.game-name {
+  text-decoration: none;
+}
+.game-title {
+  font-size: 40px;
+  font-family: 'Merriweather', serif;
+}
+.game-developer {
+  opacity: 50%;
+}
+.ratings {
+  font-size: 60px;
+  color: rgb(85, 224, 85);
+}
+.content-container-first-bottom {
+  background-color: var(--color30);
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  padding: 1rem;
+}
+.reviews-subheader {
+  font-size: 30px;
+}
+.stars1 {
+  color: rgb(85, 224, 85);
+}
+.stars2 {
+  color: var(--light)
+}
+textarea {
+  padding: 1rem;
+  border: 0;
+  background-color: #21252933;
+}
+textarea:focus {
+  outline: none;
+}
+textarea::placeholder {
+  color: var(--light);
+  opacity: 0.5;
+}
+.review-actions button {
+  border: 0;
+  background-color: #07004D;
+  color: var(--light);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 4rem;
+}
+.review-as a {
+  font-size: 15px;
+  color: var(--light);
+}
+.review-as1 {
+  font-size: 15px;
+}
+.users img {
+  width: 40px;
+  border-radius: 50%;
+
+}
+.users-name {
+  margin-left: 1rem;
+  font-size: 15px;
+}
+.users-comment-time {
+  margin-right: 1rem;
+  font-size: 15px;
+  opacity: 0.5;
+}
+.users-comment {
+  margin-left: 1rem;
+}
+.users-reviews1-actions{
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.users-reviews1-actions button {
+  border: 0;
+  margin-right: 10px;
+  background-color: #21252933;
+  color: var(--light);
+  font-size: 15px;
+  border-radius: 10px;
+}
+.content-container-second {
+  height: 100%;
+  width: clamp(320px,40%,40%);
+
+}
+.subheader {
+  width: 100%;
+  text-align: center;
+  background-color: var(--color10);
+  color: var(--light);
+  font-family: 'Merriweather', serif;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.shadowed {
+  box-shadow: 
+    3px 3px 3px #333333ad;
+}
+.content2 {
+  width: 100%;
+  height: 200px;
+  background-color: #21252933;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+.content3 {
+  
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-content: start;
+  padding-left: 1rem;
+}
+.voting-links {
+  width: clamp(320px, 80%, 992px);
+  background-color: var(--color30);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.voting-links span.material-symbols-outlined {
+  font-size: 4rem;
+}
+.voting-links a {
+  text-decoration: none;
+  color: var(--light);
+}
+@media (max-width: 992px) {
+  .content-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-container-first {
+    width: clamp(320px,80%,80%);
+    margin-right: 0;
+  }
+  .content-container-second {
+    width: clamp(320px,80%,80%);
+  }
+  .voting-links {
+    width: clamp(320px,100%,100%);
+  }
+}
+
+/*                                               content end */
+/*                                               content end */
+/*                                               content end */
+/*                                               content end */
+/*                                               content end */
