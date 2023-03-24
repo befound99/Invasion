@@ -236,7 +236,6 @@ a.content1:hover{
 
   width: 100%;
   background-color: var(--color60);
-  padding: 5rem 0;
 
 }
 .content-container{
@@ -253,12 +252,11 @@ a.content1:hover{
 .content-container-first {
 
   width: 60%;
-  padding: 3rem 0;
 
 }
 .new-titles{
 
-  width: clamp(320px, 80%, 992px);
+  width: clamp(320px, 90%, 992px);
   background-color: var(--color30);
   margin-bottom: 3rem;
   border-radius: 5px;
@@ -285,7 +283,7 @@ a.content1:hover{
 }
 .annual-ranking{
 
-  width: clamp(320px, 80%, 992px);
+  width: clamp(320px, 90%, 992px);
   background-color: var(--color30);
   margin-bottom: 3rem;
   border-radius: 5px;
@@ -340,7 +338,6 @@ span.material-symbols-outlined {
 /*                              content-container-second */
 .content-container-second {
   width: 40%;
-  padding: 3rem 0;
 }
 .content-container-second a:hover {
   color: var(--light);
@@ -371,7 +368,7 @@ span.material-symbols-outlined {
 /*                                          Voting Links */
 /*                                          Voting Links */
 .voting-links {
-  width: clamp(320px, 80%, 992px);
+  width: clamp(320px, 90%, 992px);
   background-color: var(--color30);
   border-radius: 5px;
   overflow: hidden;
@@ -389,7 +386,7 @@ span.material-symbols-outlined {
 /*                                                 articles */
 /*                                                 articles */
 .articles {
-  width: clamp(320px, 80%, 992px);
+  width: clamp(320px, 90%, 992px);
   background-color: var(--color30);
   border-radius: 5px;
   overflow: hidden;
