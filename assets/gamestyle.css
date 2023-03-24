@@ -36,8 +36,7 @@ nav , header.d-flex, section, .content-container, .content-container-body {
   min-width: 320px;
 }
 .shadowed {
-  box-shadow: 
-    3px 3px 3px #333333ad;
+  box-shadow: 0 0 3px #333333ad;
 }
 .text-shadowed-dark {
   text-shadow: 0px 0px 8px black;
@@ -244,6 +243,12 @@ a.game-name {
   font-size: 60px;
   color: rgb(85, 224, 85);
 }
+.ratings-score {
+  background-color: rgba(255, 255, 255, 0.199);
+  padding: 0 10px;
+  border: 2px rgb(85, 224, 85) solid;
+  border-radius: 10px;
+}
 .content-container-first-bottom {
   background-color: var(--color30);
   width: 100%;
@@ -322,6 +327,11 @@ textarea::placeholder {
   width: clamp(320px,40%,40%);
 
 }
+.content-container-second a:hover {
+  color: var(--light);
+  position: relative;
+  top: 1px;
+}
 .subheader {
   width: 100%;
   text-align: center;
@@ -380,7 +390,7 @@ textarea::placeholder {
     width: clamp(320px,80%,80%);
   }
   .voting-links {
-    width: clamp(320px,100%,100%);
+    width: clamp(320px,auto,100%);
   }
 }
 

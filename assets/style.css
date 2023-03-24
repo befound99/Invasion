@@ -16,6 +16,9 @@
 .bc-light {
   background-color: var(--light);
 }
+.bc-transparent {
+  background-color: transparent;
+}
 .t-dark {
   color: var(--dark);
 }
@@ -211,7 +214,6 @@ a.content1{
   height: 200px;
   width: clamp(280px,90%,90%);
   display: block;
-  background-color: red;
   margin-bottom: 1rem;
   text-align: center;
   display: flex;
