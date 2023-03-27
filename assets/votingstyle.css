@@ -31,7 +31,7 @@
 nav {
   width: 100%;
 }
-nav , header.d-flex, section, .content-container, .content-container-body {
+nav , header.d-flex, .content-container-body, .content-container  {
   min-width: 320px;
 }
 .shadowed {
@@ -200,18 +200,147 @@ ul.nav-list {
 /*                                               navbar end */
 /*                                               navbar end */
 .content-container-body {
-  height: 100vh;
-  width: 100%;
+  width: clamp(320px , 100% , 100%);
   justify-content: center;
+  width: 100%;
   background-color: var(--color60);
 }
 .content-container {
-  height: 90%;
-  width: clamp(320px, 992px,992px);
+  padding: 3rem 0;
+  width: clamp(320px , 992px, 992px);
+  justify-content: center;  
   background-image: linear-gradient(var(--color60),#3333332a,var(--color60));
 }
 .voting {
+  width: clamp(320px, 90%,90%);
+  flex-direction: column;
+}
+.voting-sub-header {
+  padding: 10px ;
+  font-size: 30px;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  background-color: var(--color10);
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.voting-search-bar {
+  background-color: var(--color30);
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+.voting-search-bar input {
+  margin-right: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+.voting-search-bar input:focus {
+  outline: 0;
+}
+.voting-search-bar button {
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--color10);
+}
+.voting-content {
+  padding: 0 10px 0 10px;
+  background-color: var(--color30);
+
+}
+.content {
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  height: 200px;
+  width: 100%;
+  background-color: red;
+}
+.content button {
+  border: 0;
+  background-color: transparent;
+}
+.content button:hover {
+  position: relative;
+  top: 2px;
+}
+.voting-content-first {
+  width: 50%;
+  margin-right: 10px;
+}
+.voting-content-second {
+  width: 50%;
+}
+.title-dev {
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+i.fa-solid.fa-circle-arrow-up {
   
+  font-size: 2rem;
+  color: var(--light);
+}
+.i.fa-solid.fa-circle-arrow-up:hover {
+  position: relative;
+  top: 1px;
+}
+.voting-content1 {
+  background-image: linear-gradient(to right,#333333c7,transparent,transparent) , url(img/elden-ring-limgrave-vista.jpg);
+  background-size: cover;
+}
+.voting-content2{
+  background-image: linear-gradient(to right,#333333c5,transparent,transparent) , url(img/GOW\ ragnarok.webp);
+  background-size: cover;
+}
+.voting-content3{
+  background-image: linear-gradient(to right,#333333c5,transparent,transparent) , url(img/zelda-tears-of-the-kingdom-button-2k-1663127818777.jpg);
+  background-size: cover;
+}
+.voting-content4 {
+  background-image: linear-gradient(to right,#333333c5,transparent,transparent) , url(img/FFXVI.webp);
+  background-size: cover;
+}
+.voting-content5 {
+  background-image: linear-gradient(to right,#333333c5,transparent,transparent) , url(img/Diablo-4-6.jpg);
+  background-size: cover;
+}
+.voting-content6 {
+  background-image: linear-gradient(to right,#333333c5,transparent,transparent) , url(img/starfield.jpg);
+  background-size: cover;
+}
+.voting-content7 {
+  background-image: linear-gradient(to right,#333333c5,transparent,transparent) , url(img/hogwarts\ legacy.jpg);
+  background-size: cover;
+}
+.voting-content8 {
+  background-image: linear-gradient(to right,#333333c5,transparent,transparent) , url(img/vampire\ survivors.webp);
+  background-size: cover;
+}
+.voting-content9 {
+  background-image: linear-gradient(to right,#333333c5,transparent,transparent) , url(img/marvel\ snap.webp);
+  background-size: cover;
+}
+.voting-content10 {
+  background-image: linear-gradient(to right,#333333c5,transparent,transparent) , url(img/citizen\ sleeper.webp);
+  background-size: cover;
+}
+@media (width <= 992px) {
+  .voting-content {
+    flex-direction: column;
+  }
+  .voting-content-first {
+    margin-right: 0;
+    width: 100%;
+  }
+  .voting-content-second {
+    width: 100%;
+  }
 }
 
 

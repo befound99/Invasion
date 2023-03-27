@@ -131,7 +131,7 @@ a.brand img {
   background-color: var(--color60);
   height: 4rem;
   position: sticky;
-  top: 0;
+  top: -1;
 
 }
 nav {
