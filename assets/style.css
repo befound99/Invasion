@@ -19,6 +19,12 @@
 .bc-transparent {
   background-color: transparent;
 }
+.bc-10 {
+  background-color: var(--color10);
+}
+.bc-30 {
+  background-color: var(--color30);
+}
 .bc-60 {
   background-color: var(--color60);
 }
@@ -40,7 +46,16 @@ nav {
 nav , header.d-flex, section, .content-container, .content-container-body {
   min-width: 320px;
 }
-
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  background-color: var(--color10);
+  border: 0;
+  border-radius: 5px;
+  width: 3rem;
+  padding: 10px;
+}
 /*                                              Header */
 /*                                              Header */
 /*                                              Header */
@@ -89,6 +104,21 @@ a.brand img {
   box-shadow: 5px 5px 5px rgb(16, 16, 41) ;
 
 }
+.modal-body {
+  flex-direction: column;
+}
+.modal-body a{
+  text-decoration: none;
+}
+.modal-body a:hover {
+  color: var(--color30);
+  text-decoration: underline;
+
+}
+.modal-footer button{
+ border: 0;
+ border-radius: 5px;
+}
 .signup:hover {
   box-shadow: 3px 3px 3px rgb(16, 16, 41) ;
   position: relative;
@@ -131,7 +161,7 @@ a.brand img {
   background-color: var(--color60);
   height: 4rem;
   position: sticky;
-  top: -1;
+  top: 0;
 
 }
 nav {
@@ -208,7 +238,6 @@ ul.nav-list {
   text-align: center;
   background-color: var(--color10);
   color: var(--light);
-  font-family: 'Merriweather', serif;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
@@ -465,7 +494,6 @@ footer {
 a.footer-brand {
   
   font-size: 60px;
-  font-family: 'Merriweather', serif;
 
 }
 .footer-links a {

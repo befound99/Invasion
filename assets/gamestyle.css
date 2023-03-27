@@ -43,7 +43,16 @@ nav , header.d-flex, section, .content-container, .content-container-body {
 .text-shadowed-dark {
   text-shadow: 0px 0px 8px black;
 }
-
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  background-color: var(--color10);
+  border: 0;
+  border-radius: 5px;
+  width: 3rem;
+  padding: 10px;
+}
 /*                                              Header */
 /*                                              Header */
 /*                                              Header */
@@ -237,7 +246,6 @@ a.game-name {
 }
 .game-title {
   font-size: 40px;
-  font-family: 'Merriweather', serif;
 }
 .game-developer {
   opacity: 50%;
@@ -346,7 +354,6 @@ textarea::placeholder {
   text-align: center;
   background-color: var(--color10);
   color: var(--light);
-  font-family: 'Merriweather', serif;
   margin-bottom: 1rem;
   font-size: 2rem;
 }

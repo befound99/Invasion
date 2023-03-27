@@ -10,35 +10,70 @@
     <title>Game of the Year</title>
   </head>
 <body>
-      <!--                                             header -->
+  <a href="#">
+    <button class="back-to-top t-light">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+  </a>
     <!--                                             header -->
     <!--                                             header -->
     <!--                                             header -->
-    <header class="d-flex flex-column justify-content-between">
-      <div class="header-top-body d-flex justify-content-center">
-        <div class="header-top d-flex justify-content-between w-100">
-          <a href="index.html" class="brand mt-2 ms-2">
-            <img src="assets/icons-and-logos/Logo light transparent.png" alt="Invasion Icon">
-          </a>
+    <!--                                             header -->
+  <header class="d-flex flex-column justify-content-between">
+    <div class="header-top-body d-flex justify-content-center">
+      <div class="header-top d-flex justify-content-between w-100">
+        <a href="index.html" class="brand mt-2 ms-2">
+          <img src="assets/icons-and-logos/Logo light transparent.png" alt="Invasion Icon">
+        </a>
+        <div class="sign d-flex align-items-center">
           <div class="sign d-flex align-items-center">
-            <a href="#"><div class="signin t-light text-shadowed">Sign in</div></a>
-            <a href="#"><div class="signup t-light">Sign Up</div></a>
+            <a href="#"><div class="signup t-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign in</div></a>
           </div>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bc-10 t-light">
+                  <h1 class="modal-title fs-5 " id="staticBackdropLabel">Sign in</h1>
+                </div>
+                <div class="modal-body d-flex t-dark">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">UserName</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="d">
+                    <a href="signup.html" class="t-30">
+                      Dont have an account?
+                    </a>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="sign-in-cancel bc-10 t-light" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="sign-in-proceed bc-10 t-light">Log In</button>
+                </div>
+              </div>
+            </div>
+        </div>
         </div>
       </div>
-      <div class="header-bottom-body">
+    </div>
+    <div class="header-bottom-body">
 
-      </div>
-      <!--                                            navbar -->
-      <!--                                            navbar -->
-      <!--                                            navbar -->
-      <!--                                            navbar -->
+    </div>
+    <!--                                            navbar -->
+    <!--                                            navbar -->
+    <!--                                            navbar -->
+    <!--                                            navbar -->
 
-      <!--                                                navbar end -->
-      <!--                                                navbar end -->
-      <!--                                                navbar end -->
-      <!--                                                navbar end -->
-    </header>
+    <!--                                                navbar end -->
+    <!--                                                navbar end -->
+    <!--                                                navbar end -->
+    <!--                                                navbar end -->
+  </header>
     <div class="navbar-body d-flex justify-content-center align-items-center">
       <nav class="navbar navbar-expand-lg d-flex align-items-center fw-semibold bc-60">
         <div class="container-fluid p-0">
